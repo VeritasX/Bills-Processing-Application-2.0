@@ -1,0 +1,40 @@
+body{
+    background-color: rgb(1, 49, 90);
+    color:rgb(255,255,255);
+}
+
+.alignTextCenter{
+    text-align: center;
+    padding-top:1em;
+    padding-bottom:1em;
+}
+
+.jumbotron{
+    background-color: rgb(255,255,255);
+    border-radius:0;
+    color: rgb(1, 49, 90);
+}
+
+.headerColor{
+    color:#fff;
+}
+.buttonColors{
+    background-color: rgb(255,255,255);
+    color:rgb(1,49,90)
+}
+
+
+.jumbotron-hr{
+    background-color: rgb(255,255,255);
+    border-radius:0;
+    color: rgb(1, 49, 90);
+}
+
+input{
+    color:rgb(1, 49, 90);
+}
+
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}

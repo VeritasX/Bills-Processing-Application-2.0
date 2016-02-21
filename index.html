@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="BillsApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Bills Processing App</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <script src="node_modules/angular/angular.js"></script>
+</head>
+<body>
+<div ng-controller="MainCtrl">
+<div class="jumbotron">
+    <h1>Bill Calculation Application </h1>
+
+    <p >This Application will help you add up and see the total cost of your bills</p>
+</div>
+
+    <form name="BillInput">
+        <div class="input-group">
+            <span class="input-group-addon" id="basic-addon1">Bill</span>
+            <input name="bill" class="col-centered"  type="text"  ng-model="bill">
+        </div>
+
+
+        <br/>
+        <div class="input-group ">
+            <span class="input-group-addon" id="basic-addon1">Amount</span>
+            <input name="Amount" type="text"  ng-model="amount">
+        </div>
+
+    </form>
+
+
+    <br/>
+   <button type="button" class="btn btn-sm center-block buttonColors" ng-click="submit()">Add Item to List</button>
+    <p class="alignTextCenter">{{feedback}}</p>
+</div>
+<br/>
+<div class="totalCosts">
+<div class="jumbotron-hr">
+    <h3 class="alignTextCenter">Your total cost is below</h3>
+</div>
+</div>
+
+<script src="js/app.js"></script>
+<script src="js/MainCtrl.js"></script>
+</body>
+</html>

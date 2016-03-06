@@ -19,26 +19,29 @@ app.controller('MainCtrl', ['$scope', function($scope){
 
 
     $scope.submit=function() {
-        function clearInput(){
-            $scope.amount=null;
-            $scope.bill=null;
+        function clearInput() {
+            $scope.amount = null;
+            $scope.bill = null;
         }
-        if ($scope.amount === null  && $scope.bill === null) {
-            $scope.feedback = 'Please input an amount';
-        } else {
-            $scope.parseAmount = parseFloat($scope.amount);
-            $scope.totalAmount = $scope.totalAmount + $scope.parseAmount;
-            $scope.totalAmount = $scope.totalAmount.toFixed(2);//Debating on moving this to another function
-            $scope.totalAmount = parseFloat($scope.totalAmount);// Above comment
 
-            $scope.billsArray.push($scope.bill);
-            $scope.amountArray.push($scope.amount);
-            if ($scope.billsArray.length > 0) {
-                $scope.feedback = 'Please feel free to input more items'
+
+            if ($scope.amount === null || $scope.bill === null) {
+                $scope.feedback = 'Please input an amount';
+            } else {
+                $scope.parseAmount = parseFloat($scope.amount);
+                $scope.totalAmount = $scope.totalAmount + $scope.parseAmount;
+                $scope.totalAmount = $scope.totalAmount.toFixed(2);//Debating on moving this to another function
+                $scope.totalAmount = parseFloat($scope.totalAmount);// Above comment
+
+                $scope.billsArray.push($scope.bill);
+                $scope.amountArray.push($scope.amount);
+                if ($scope.billsArray.length > 0) {
+                    $scope.feedback = 'Please feel free to input more items'
+                }
+
+                clearInput()
             }
 
-            clearInput()
         }
 
-    }
 }]);

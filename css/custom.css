@@ -47,9 +47,35 @@ input{
     width:60%;
 }
 
+
+
+@media screen and (min-width:500px){
+    .makeDivSmall{
+        width:50%;
+    }
+}
+
+@media screen and (min-width:606px){
+    .makeDivSmall{
+        width:40%;
+    }
+}
+
+@media screen and (min-width:700px){
+    .makeDivSmall{
+        width:35%;
+    }
+}
+
+@media screen and (min-width:800px){
+    .makeDivSmall{
+        width:29%;
+    }
+}
+
 @media screen and (min-width: 900px) {
-  .makeDivSmall{
-      width:17%;
-  }
+    .makeDivSmall{
+        width:17%;
+    }
 
 }

@@ -14,7 +14,7 @@
 
     <p >This Application will help you add up and see the total cost of your bills</p>
 </div>
-    <div class="center-block makeDivSmall">
+    <div class="col-centered makeDivSmall">
     <form name="BillInput">
         <div class="input-group">
             <span class="input-group-addon" id="basic-addon1">Bill</span>
@@ -35,6 +35,17 @@
     <br/>
    <button type="button" class="btn btn-sm center-block buttonColors" ng-click="submit()">Add Item to List</button>
     <p class="alignTextCenter">{{feedback}}</p>
+
+    <div class="jumbotron-hr" ng-show="billsArray.length > 0">
+        <h2 class=""> Your Bills </h2>
+        <div class="col-centered" ng-repeat="bills in billsArray">
+            <h3> Bill: {{bills}} &nbsp; &nbsp; Amount: ${{amountArray[$index]}} </h3>
+            <br/>
+        </div>
+        <div class="col-centered">
+            <h2>Total Amount:  ${{totalAmount}}</h2>
+        </div>
+    </div>
 </div>
 <br/>
 

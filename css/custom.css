@@ -28,6 +28,7 @@ body{
     background-color: rgb(255,255,255);
     border-radius:0;
     color: rgb(1, 49, 90);
+    text-align:center;
 }
 
 input{

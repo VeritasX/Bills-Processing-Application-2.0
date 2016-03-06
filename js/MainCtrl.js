@@ -1,7 +1,7 @@
 /**
  * Created by aaronendsley on 2/20/16.
  */
-'use strict'
+'use strict';
 //all logic that is currently in the controller will be moved to services/factories/providers once i learn how to create them
 
 app.controller('MainCtrl', ['$scope', function($scope){
@@ -41,11 +41,4 @@ app.controller('MainCtrl', ['$scope', function($scope){
         }
 
     }
-
-
-    $scope.updateTotal=function(){
-
-    }
-
-
-}])
+}]);
